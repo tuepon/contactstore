@@ -47386,7 +47386,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     createContact: function createContact() {
       console.log('Creating contact...');
       var self = this;
-      var params = object.assign({}, self.contact);
+      var params = Object.assign({}, self.contact);
       axios.post('api/contact/store', params).then(function () {
         self.contact.name = '';
         self.contact.email = '';

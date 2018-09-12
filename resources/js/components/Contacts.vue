@@ -54,7 +54,7 @@
       createContact: function(){
         console.log('Creating contact...');
         let self = this;
-        let params =object.assign({}, self.contact);
+        let params = Object.assign({}, self.contact);
         axios.post('api/contact/store', params)
           .then(function(){
             self.contact.name = '';
