@@ -49,7 +49,7 @@
       this.fetchContactList();
     },
     methods: {
-      fetchContactList:function(){
+      fetchContactList: function(){
         console.log('Fetching contacts...');
         axios.get('api/contacts')
           .then((response) => {
