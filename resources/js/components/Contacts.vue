@@ -19,6 +19,8 @@
       <button v-show="edit" type="submit" class="btn btn-primary">Update Contact</button>
     </div>
     </form>
+
+    
   </div>
 </template>
 
@@ -64,7 +66,7 @@
             self.fetchContactList();
           })
           .catch(function(error){
-            console.log(error)
+            console.log(error);
           });
       },
       updateContact: function(id){
